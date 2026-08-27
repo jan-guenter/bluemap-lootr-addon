@@ -1,0 +1,37 @@
+{
+  "artifacts": [
+    {
+      "curseforge_file": 8428025,
+      "curseforge_project": 361276,
+      "download_url": "https://www.curseforge.com/api/v1/mods/361276/files/8428025/download",
+      "evidence": "All the Mons 1.2.0 exact manifest association and SHA-1-correlated runtime archive",
+      "evidence_tier": "T2_ARTIFACT_EXACT",
+      "file_name": "lootr-neoforge-1.21.1-1.11.37.122.jar",
+      "key": "lootr",
+      "license": "MIT",
+      "mod_id": "lootr",
+      "redistributed": false,
+      "sha1": "a5dae941acc991df3f0de56bd8367f719824f131",
+      "sha256": "fd330d69bb0740d2833ad91784ee5f8b0e4c5d8dbee379e60e93ca2d1c252fce",
+      "size": 992330,
+      "version": "1.21.1-1.11.37.122"
+    }
+  ],
+  "bluemap": {
+    "api_commit": "285c9a60eff3ac2b0cab308ce1058d1565be0971",
+    "commit": "9be321df995a1103808621d529eb72773e719d4d",
+    "license": "MIT",
+    "redistributed": false,
+    "version": "5.22-agent.backport-5.22-mc1.21.1-2"
+  },
+  "pack": {
+    "commit": "c7bb230f21d14d26859d0b92548f089b3a493ad9",
+    "minecraft": "1.21.1",
+    "name": "All the Mons",
+    "neoforge": "21.1.248",
+    "version": "1.2.0"
+  },
+  "profile": "lootr-1.11.37.122-mc1.21.1",
+  "schema": 1,
+  "source_use": "Runtime interfaces and installed resources may be interpreted only after family-specific evidence is recorded; no candidate classes, assets, binaries, source, or captured meshes are packaged."
+}

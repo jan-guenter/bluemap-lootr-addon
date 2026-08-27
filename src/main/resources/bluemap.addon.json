@@ -1,0 +1,6 @@
+{
+  "id": "bluemap-lootr",
+  "entrypoint": "io.github.janguenter.bluemap.lootr.BlueMapLootrAddon",
+  "dependencies": [],
+  "soft-dependencies": []
+}
