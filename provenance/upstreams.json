@@ -32,6 +32,20 @@
     "version": "1.2.0"
   },
   "profile": "lootr-1.11.37.122-mc1.21.1",
+  "renderer_evidence": {
+    "commit": "eee5e21372fb45e4d33b501e876ae432c80e55d8",
+    "correlation_note": "Exact version-labeled tag; the runtime JAR does not embed a source commit, so the source identity is not claimed as artifact-correlated.",
+    "license": "MIT",
+    "repository": "https://github.com/LootrMinecraft/Lootr",
+    "scope": [
+      "LootrHasBeenOpened persisted appearance approximation",
+      "closed single-chest and shulker texture selection and facing",
+      "barrel and brushable custom-loader submodel selection",
+      "opened decorated-pot cuboid dimensions, UV offsets and static poses"
+    ],
+    "tag": "mdg-1.21.1-1.11.37.122",
+    "tier": "T5_REFERENCE_ONLY"
+  },
   "schema": 1,
   "source_use": "Runtime interfaces and installed resources may be interpreted only after family-specific evidence is recorded; no candidate classes, assets, binaries, source, or captured meshes are packaged."
 }

@@ -3,5 +3,10 @@
 ## Unreleased
 
 - Generated a fail-closed Java 21 BlueMap add-on seed for `lootr-1.11.37.122-mc1.21.1`.
-- SCAFFOLD_NOT_IMPLEMENTED: renderer implementation and visual acceptance
-  remain pending.
+- Added exact-profile routes for eight Lootr custom-loader and block-entity
+  renderer blocks while leaving the trophy on stock rendering.
+- Reused BlueMap's installed chest, shulker, and decorated-pot geometry with
+  Lootr's installed atlases; added directional barrel and brushable cubes.
+- Added deterministic persisted opened-state decoding, atomic stock fallback,
+  tests, and a compact 14-cell comparison gallery.
+- Owner visual acceptance remains pending.

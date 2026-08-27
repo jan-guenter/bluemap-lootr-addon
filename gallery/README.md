@@ -1,11 +1,13 @@
-# Placeholder gallery
+# Lootr comparison gallery
 
-This generated gallery proves only the deterministic data-pack mechanics and a
-single `minecraft:stone` stock control at `(176, 100, 175)`. It does not claim
-Lootr support.
+This deterministic 14-cell gallery covers all eight custom-loader or
+block-entity-rendered Lootr blocks in the exact ATMons 1.2.0 profile. Gold and
+silver cases use the persisted `LootrHasBeenOpened` bit as a stable BlueMap
+approximation of Lootr's player-specific client appearance. The final trophy is
+an ordinary JSON-model stock control and is intentionally not routed through
+the add-on.
 
-Replace `cases.py` with the smallest real defect fixture and stock controls,
-then keep the stable commands:
+Regenerate and validate it with:
 
 ```bash
 python gallery/generate.py
@@ -14,6 +16,6 @@ python gallery/lint.py
 bash gallery/package.sh /tmp/lootr-gallery.zip
 ```
 
-The release gate rejects the `SCAFFOLD_NOT_IMPLEMENTED` marker in `cases.py`.
-Keep gallery generation deterministic, bounded, synthetic where practical, and
-free of candidate assets or captured meshes.
+The build function clears only `(162, 99, 170)` through `(190, 103, 178)`, lays
+a light-gray comparison floor, places the 14 cells, and performs block-state
+checks. It creates no entities, ticking machinery, or external state.

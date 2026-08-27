@@ -3,7 +3,7 @@
 | Project | Identity | License | Use | Redistributed |
 | --- | --- | --- | --- | --- |
 | BlueMap | `5.22-agent.backport-5.22-mc1.21.1-2` / `9be321df995a1103808621d529eb72773e719d4d` | MIT | Compile-only internal API | No |
-| Lootr profile | `lootr-1.11.37.122-mc1.21.1` | See `provenance/upstreams.json` | Exact installed-artifact and resource evidence only | No |
+| Lootr profile | `lootr-1.11.37.122-mc1.21.1`, source tag `mdg-1.21.1-1.11.37.122` | MIT | Exact installed-artifact resources and renderer-behavior evidence | No |
 
 The packaged `META-INF/LICENSE-BlueMap` preserves the license notice for the
 API patterns used by this project. Candidate license identities and evidence
