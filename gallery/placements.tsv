@@ -1,2 +1,15 @@
-case_id	label	x	y	z	block_state	expected
-stock-control	stone stock rendering control	176	100	175	minecraft:stone	stock-visible
+case_id	label	x	y	z	block_state	block_nbt	expected
+chest-unopened	gold Lootr chest from persisted unopened state	164	100	172	lootr:lootr_chest[facing=south,type=single,waterlogged=false]	{LootrHasBeenOpened:0b}	closed-single-chest-gold
+chest-opened	silver Lootr chest approximation after any player opened it	168	100	172	lootr:lootr_chest[facing=east,type=single,waterlogged=false]	{LootrHasBeenOpened:1b}	closed-single-chest-silver
+trapped-unopened	gold trapped chest control	172	100	172	lootr:lootr_trapped_chest[facing=south,type=single,waterlogged=false]	{LootrHasBeenOpened:0b}	closed-trapped-chest-gold
+inventory-opened	silver inventory chest renderer route	176	100	172	lootr:lootr_inventory[facing=west,type=single,waterlogged=false]	{LootrHasBeenOpened:1b}	closed-inventory-chest-silver
+barrel-unopened	gold upright barrel	180	100	172	lootr:lootr_barrel[facing=up,open=false]	{LootrHasBeenOpened:0b}	barrel-gold-closed-top
+barrel-opened-open	silver horizontal barrel using default-new texture route	184	100	172	lootr:lootr_barrel[facing=north,open=true]	{LootrHasBeenOpened:1b}	barrel-silver-default-new
+shulker-unopened	gold closed shulker facing up	188	100	172	lootr:lootr_shulker[facing=up]	{LootrHasBeenOpened:0b}	closed-shulker-gold
+shulker-opened	silver closed shulker facing east	164	100	176	lootr:lootr_shulker[facing=east]	{LootrHasBeenOpened:1b}	closed-shulker-silver
+sand-stage-zero	unopened suspicious sand stage zero	168	100	176	lootr:suspicious_sand[dusted=0]	{LootrHasBeenOpened:0b}	vanilla-stage-zero-texture
+sand-stage-three	unopened suspicious sand stage three	172	100	176	lootr:suspicious_sand[dusted=3]	{LootrHasBeenOpened:0b}	vanilla-stage-three-texture
+gravel-opened	opened suspicious gravel override	176	100	176	lootr:suspicious_gravel[dusted=2]	{LootrHasBeenOpened:1b}	lootr-opened-gravel-texture
+pot-unopened	intact unopened Lootr decorated pot	180	100	176	lootr:decorated_pot[cracked=false,facing=south,waterlogged=false]	{LootrHasBeenOpened:0b}	intact-gold-pot
+pot-opened	persisted opened Lootr pot static pose	184	100	176	lootr:decorated_pot[cracked=false,facing=east,waterlogged=false]	{LootrHasBeenOpened:1b}	broken-silver-pot
+trophy-stock-control	ordinary Lootr trophy remains on stock rendering	188	100	176	lootr:trophy[facing=north]		stock-visible

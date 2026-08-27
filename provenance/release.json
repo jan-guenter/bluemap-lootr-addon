@@ -1,10 +1,61 @@
 {
-  "accepted_staging_entries": null,
-  "final_release_artifacts": null,
-  "note": "Populate only after owner visual acceptance; this file is not packaged.",
-  "owner_accepted_staging": null,
+  "accepted_staging_entries": {
+    "entry_count": 42,
+    "path": "provenance/accepted-staging-entries.sha256",
+    "sha256": "0235a69a8b5444fe46e2bd942aad8cd21902fc7fdac20ee0cb1fbdc70c107e6e"
+  },
+  "final_release_artifacts": {
+    "gradle_module": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.module.json",
+      "sha256": "416cceed4718ebeb35033a771144c9ed9b4a0a0648d76db536b9bb8baef82b7e",
+      "size": 2805
+    },
+    "pom": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.pom",
+      "sha256": "f158a4f7c4a7f7f7ff18a02cb8887df1baf1191c25c9094d8c7b11150a5ddd81",
+      "size": 1305
+    },
+    "production_jar": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.jar",
+      "sha256": "009495162e9319990f7dfc427c4b5a9caa9279fbcd64740e51ccacaa37b06cc3",
+      "size": 138464
+    },
+    "sources_jar": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1-sources.jar",
+      "sha256": "1b4ee55eaa619efe227080da7e5ae8190a8ec6647be4d398af4e70ce6abfe6f3",
+      "size": 87674
+    }
+  },
+  "note": "Owner-accepted staging identities and final publication artifacts are sealed here. This file is not packaged.",
+  "owner_accepted_staging": {
+    "accepted_on": "2026-08-28",
+    "addon_jar": {
+      "file_name": "bluemap-lootr-addon-0.1.0-SNAPSHOT.jar",
+      "sha256": "dd6de743e4605947b8341a17bbdd0f398bed54268a321a87b1e32b389b373262",
+      "size": 138465
+    },
+    "candidate_inputs": {
+      "lootr": {
+        "file_name": "lootr-neoforge-1.21.1-1.11.37.122.jar",
+        "sha256": "fd330d69bb0740d2833ad91784ee5f8b0e4c5d8dbee379e60e93ca2d1c252fce",
+        "size": 992330
+      }
+    },
+    "gallery": {
+      "file_name": "lootr-gallery.zip",
+      "sha256": "cc05029c506345bfeabe651faa5d9c0d0f13828430fd33ed8a6ce75d0154200b",
+      "size": 2627
+    },
+    "visual_acceptance": true
+  },
   "repository": "https://github.com/jan-guenter/bluemap-lootr-addon",
   "schema_version": 1,
-  "status": "prototype-not-owner-accepted",
-  "version": "0.1.0-SNAPSHOT"
+  "prototype_scope": [
+    "gold and silver closed single-chest, trapped-chest, and inventory geometry",
+    "directional barrel, shulker, suspicious sand, and suspicious gravel appearance",
+    "intact and five-cuboid static opened decorated-pot geometry",
+    "stock trophy control and deterministic persisted LootrHasBeenOpened approximation"
+  ],
+  "status": "owner-accepted-release-candidate",
+  "version": "0.1.0-alpha.1"
 }

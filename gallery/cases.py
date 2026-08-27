@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-"""Family-owned placeholder cases for the generated gallery."""
+"""Deterministic Lootr container, brushable and pot comparison gallery."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from dataclasses import dataclass
 
 
 NAMESPACE = "lootr_gallery"
-ENVELOPE = (174, 99, 173, 178, 103, 177)
+ENVELOPE = (162, 99, 170, 190, 103, 178)
 
 
 @dataclass(frozen=True)
@@ -19,19 +19,149 @@ class Placement:
     y: int
     z: int
     block_state: str
+    block_nbt: str
     expected: str
 
 
-# SCAFFOLD_NOT_IMPLEMENTED: replace this stock-only row with the smallest
-# observed Lootr defect fixture plus one or two stock controls.
 PLACEMENTS = (
     Placement(
-        "stock-control",
-        "stone stock rendering control",
+        "chest-unopened",
+        "gold Lootr chest from persisted unopened state",
+        164,
+        100,
+        172,
+        "lootr:lootr_chest[facing=south,type=single,waterlogged=false]",
+        "{LootrHasBeenOpened:0b}",
+        "closed-single-chest-gold",
+    ),
+    Placement(
+        "chest-opened",
+        "silver Lootr chest approximation after any player opened it",
+        168,
+        100,
+        172,
+        "lootr:lootr_chest[facing=east,type=single,waterlogged=false]",
+        "{LootrHasBeenOpened:1b}",
+        "closed-single-chest-silver",
+    ),
+    Placement(
+        "trapped-unopened",
+        "gold trapped chest control",
+        172,
+        100,
+        172,
+        "lootr:lootr_trapped_chest[facing=south,type=single,waterlogged=false]",
+        "{LootrHasBeenOpened:0b}",
+        "closed-trapped-chest-gold",
+    ),
+    Placement(
+        "inventory-opened",
+        "silver inventory chest renderer route",
         176,
         100,
-        175,
-        "minecraft:stone",
+        172,
+        "lootr:lootr_inventory[facing=west,type=single,waterlogged=false]",
+        "{LootrHasBeenOpened:1b}",
+        "closed-inventory-chest-silver",
+    ),
+    Placement(
+        "barrel-unopened",
+        "gold upright barrel",
+        180,
+        100,
+        172,
+        "lootr:lootr_barrel[facing=up,open=false]",
+        "{LootrHasBeenOpened:0b}",
+        "barrel-gold-closed-top",
+    ),
+    Placement(
+        "barrel-opened-open",
+        "silver horizontal barrel using default-new texture route",
+        184,
+        100,
+        172,
+        "lootr:lootr_barrel[facing=north,open=true]",
+        "{LootrHasBeenOpened:1b}",
+        "barrel-silver-default-new",
+    ),
+    Placement(
+        "shulker-unopened",
+        "gold closed shulker facing up",
+        188,
+        100,
+        172,
+        "lootr:lootr_shulker[facing=up]",
+        "{LootrHasBeenOpened:0b}",
+        "closed-shulker-gold",
+    ),
+    Placement(
+        "shulker-opened",
+        "silver closed shulker facing east",
+        164,
+        100,
+        176,
+        "lootr:lootr_shulker[facing=east]",
+        "{LootrHasBeenOpened:1b}",
+        "closed-shulker-silver",
+    ),
+    Placement(
+        "sand-stage-zero",
+        "unopened suspicious sand stage zero",
+        168,
+        100,
+        176,
+        "lootr:suspicious_sand[dusted=0]",
+        "{LootrHasBeenOpened:0b}",
+        "vanilla-stage-zero-texture",
+    ),
+    Placement(
+        "sand-stage-three",
+        "unopened suspicious sand stage three",
+        172,
+        100,
+        176,
+        "lootr:suspicious_sand[dusted=3]",
+        "{LootrHasBeenOpened:0b}",
+        "vanilla-stage-three-texture",
+    ),
+    Placement(
+        "gravel-opened",
+        "opened suspicious gravel override",
+        176,
+        100,
+        176,
+        "lootr:suspicious_gravel[dusted=2]",
+        "{LootrHasBeenOpened:1b}",
+        "lootr-opened-gravel-texture",
+    ),
+    Placement(
+        "pot-unopened",
+        "intact unopened Lootr decorated pot",
+        180,
+        100,
+        176,
+        "lootr:decorated_pot[cracked=false,facing=south,waterlogged=false]",
+        "{LootrHasBeenOpened:0b}",
+        "intact-gold-pot",
+    ),
+    Placement(
+        "pot-opened",
+        "persisted opened Lootr pot static pose",
+        184,
+        100,
+        176,
+        "lootr:decorated_pot[cracked=false,facing=east,waterlogged=false]",
+        "{LootrHasBeenOpened:1b}",
+        "broken-silver-pot",
+    ),
+    Placement(
+        "trophy-stock-control",
+        "ordinary Lootr trophy remains on stock rendering",
+        188,
+        100,
+        176,
+        "lootr:trophy[facing=north]",
+        "",
         "stock-visible",
     ),
 )
