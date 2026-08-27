@@ -3,10 +3,10 @@
 A Java 21 BlueMap add-on for the exact `lootr-1.11.37.122-mc1.21.1` profile in All the Mons
 `1.2.0` / Minecraft `1.21.1`.
 
-Status: implemented staging prototype awaiting owner visual comparison. The
-add-on admits only the exact Lootr artifact, validates all installed textures
-and BlueMap entity models, and wraps the eight block families whose custom
-model loaders or block-entity renderers are absent from stock BlueMap.
+Status: owner-accepted `0.1.0-alpha.1` release candidate. The add-on admits only
+the exact Lootr artifact, validates all installed textures and BlueMap entity
+models, and wraps the eight block families whose custom model loaders or
+block-entity renderers are absent from stock BlueMap.
 
 ## Build
 
