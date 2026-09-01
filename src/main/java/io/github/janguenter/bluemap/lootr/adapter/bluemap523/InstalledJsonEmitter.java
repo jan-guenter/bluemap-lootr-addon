@@ -5,7 +5,7 @@
  * UV conventions, limited to installed static models and texture overrides.
  */
 
-package io.github.janguenter.bluemap.lootr.adapter.bluemap522;
+package io.github.janguenter.bluemap.lootr.adapter.bluemap523;
 
 import com.flowpowered.math.vector.Vector3f;
 import com.flowpowered.math.vector.Vector4f;

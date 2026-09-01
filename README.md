@@ -3,24 +3,31 @@
 A Java 21 BlueMap add-on for the exact `lootr-1.11.37.122-mc1.21.1` profile in All the Mons
 `1.2.0` / Minecraft `1.21.1`.
 
-Status: owner-accepted `0.1.0-alpha.1` release candidate. The add-on admits only
-the exact Lootr artifact, validates all installed textures and BlueMap entity
-models, and wraps the eight block families whose custom model loaders or
-block-entity renderers are absent from stock BlueMap.
+Version `0.1.0-alpha.2` is the unpublished native BlueMap 5.23 migration
+candidate. It preserves the owner-accepted `0.1.0-alpha.1` rendering contract.
+The add-on admits only the exact Lootr artifact, validates all installed
+textures and BlueMap entity models, and wraps the eight block families whose
+custom model loaders or block-entity renderers are absent from stock BlueMap.
 
 ## Build
 
-Clone with `--recurse-submodules`, or initialize an existing checkout with
-`git submodule update --init --recursive`, before invoking Gradle.
-
 ```bash
-gradle --no-daemon -PbluemapSourcePath=../bluemap-backport clean check build
+git submodule update --init --recursive -- \
+  tooling/bluemap-addon-toolkit modules/bluemap-addon-adapter-api
+gradle --no-daemon -PbluemapSourcePath=/path/to/BlueMap-at-7e07f4e7 \
+  -PlootrJar=/path/to/lootr-neoforge-1.21.1-1.11.37.122.jar \
+  -PreleaseTag=v0.1.0-alpha.2 clean prototypeCheck build \
+  generatePomFileForAddonPublication \
+  generateMetadataFileForAddonPublication verifyReleaseCandidate
 ```
 
 `check` is the quick Java/checkstyle/archive gate. `prototypeCheck` additionally
 requires every exact candidate JAR property and validates the 14-cell gallery.
 See `provenance/upstreams.json` for immutable artifact identities and
 the [execution guide](docs/EXECUTION.md) for the prototype-to-release loop.
+
+The add-on compiles the four helpers from the exact Adapter API source-module
+gitlink. Its standalone JAR is neither installed nor nested.
 
 ## Install
 
