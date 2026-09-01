@@ -33,31 +33,31 @@
   "candidate_artifacts": {
     "production_jar": {
       "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.jar",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 143928,
+      "sha256": "3d5acf3bfc54de610790765c28361b5a1bd04ee5a93a74578d81fda9b86e1aa7"
     },
     "sources_jar": {
       "file_name": "bluemap-lootr-addon-0.1.0-alpha.2-sources.jar",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 93049,
+      "sha256": "9972f164018f5d84ca606208861570736f23d63d14e7afe587b71a827f62a2c4"
     },
     "pom": {
       "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.pom",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 1305,
+      "sha256": "ffc2442c6e9eddc947c4773833b2c380b0d53872d7b78191b05d062b30a57114"
     },
     "gradle_module": {
       "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.module.json",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 2805,
+      "sha256": "8a9153bc209b9a973e077fd050332c24c6c9c2ccf3e8bfd1bd59b35eef1a99f4"
     }
   },
   "gallery_candidate": {
     "file_name": "lootr-gallery.zip",
-    "size": 0,
-    "sha256": "PENDING",
-    "deterministic_rebuild": false,
-    "matches_alpha_1_owner_accepted_gallery": false
+    "size": 2627,
+    "sha256": "cc05029c506345bfeabe651faa5d9c0d0f13828430fd33ed8a6ce75d0154200b",
+    "deterministic_rebuild": true,
+    "matches_alpha_1_owner_accepted_gallery": true
   },
   "preserved_contract": {
     "routed_hosts": 8,
@@ -75,11 +75,11 @@
     }
   },
   "verification": {
-    "exact_input_gate": false,
+    "exact_input_gate": true,
     "adapter_api_gitlink_and_source_tree_gate": true,
-    "production_archive_boundary_gate": false,
-    "sources_archive_boundary_gate": false,
-    "local_candidate_artifact_identity_gate": false,
+    "production_archive_boundary_gate": true,
+    "sources_archive_boundary_gate": true,
+    "local_candidate_artifact_identity_gate": true,
     "authoritative_pr_ci_reproduction": false,
     "local_gradle_version": "9.6.1",
     "local_java_runtime": "21.0.12.1+1",
