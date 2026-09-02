@@ -39,7 +39,8 @@ observed defects until the owner explicitly accepts one exact staging JAR.
 The migration candidate records the production JAR, sources JAR, POM, and
 Gradle module identities under `candidate_artifacts`. After visual acceptance,
 change the provenance status to `owner-accepted-release-candidate` and record
-the exact integration run and accepted JAR under `owner_accepted_staging`.
+the exact integration manifest, source candidate, and staged activation overlay
+under `combined_integration_acceptance`.
 
 Promote `addon_version` through a pull request, remove every unresolved
 placeholder marker, and run with all exact candidate properties:

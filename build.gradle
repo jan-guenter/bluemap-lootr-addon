@@ -429,12 +429,12 @@ tasks.register('verifyReleaseMetadata') {
         def release = new groovy.json.JsonSlurper()
                 .parse(file('provenance/release.json'))
         def expectedRepository = 'https://github.com/jan-guenter/bluemap-lootr-addon'
-        if (release.status != 'unpublished-migration-candidate'
+        if (release.status != 'owner-accepted-release-candidate'
                 || release.version != project.version.toString()
                 || release.repository != expectedRepository
                 || !(release.candidate_artifacts instanceof Map)
                 || release.candidate_artifacts.isEmpty()) {
-            throw new GradleException('Migration candidate provenance is not sealed')
+            throw new GradleException('Owner-accepted release provenance is not sealed')
         }
 
         def expectedArtifacts = [

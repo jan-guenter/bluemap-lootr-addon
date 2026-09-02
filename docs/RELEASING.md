@@ -7,7 +7,8 @@ staging comparison needed to get useful visual feedback.
 After the owner accepts the candidate:
 
 1. Confirm the renderer and bounded gallery contain no scaffold-only markers.
-2. Record the accepted integration run and exact candidate JAR in
+2. Record the accepted integration manifest, exact source candidate, and staged
+   activation overlay in
    `provenance/release.json`, then set the status to
    `owner-accepted-release-candidate`.
 3. Build production JAR, sources JAR, POM, and Gradle module metadata with the

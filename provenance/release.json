@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "unpublished-migration-candidate",
+  "status": "owner-accepted-release-candidate",
   "published": false,
   "version": "0.1.0-alpha.2",
   "release_date": "2026-09-02",
@@ -59,6 +59,27 @@
     "deterministic_rebuild": true,
     "matches_alpha_1_owner_accepted_gallery": true
   },
+  "combined_integration_acceptance": {
+    "atmons_version": "1.2.0",
+    "accepted_on": "2026-09-02",
+    "owner_visual_acceptance": true,
+    "candidate_manifest": {
+      "generated_at": "2026-09-01T23:58:18.759515Z",
+      "sha256": "315ed84b8edd88132854382da76498cd84b23cef3b30093bf7f69825b09a72a4",
+      "integration_summary": "51/51"
+    },
+    "source_candidate_artifact": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.jar",
+      "size": 143928,
+      "sha256": "3d5acf3bfc54de610790765c28361b5a1bd04ee5a93a74578d81fda9b86e1aa7",
+      "source_commit": "f4e1ddb1c4f4de6118ad362446d12a10d5e5bfba"
+    },
+    "staged_overlay_artifact": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.jar",
+      "size": 144288,
+      "sha256": "1a30d65f4d4cf20c5647932a9c816b8e9e934c4a74defd6388d3b52bf87e8a50"
+    }
+  },
   "preserved_contract": {
     "routed_hosts": 8,
     "gallery_cases": 14,
@@ -83,6 +104,6 @@
     "authoritative_pr_ci_reproduction": false,
     "local_gradle_version": "9.6.1",
     "local_java_runtime": "21.0.12.1+1",
-    "exact_alpha_2_runtime_review": false
+    "exact_alpha_2_runtime_review": true
   }
 }
