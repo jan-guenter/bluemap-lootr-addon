@@ -1,61 +1,109 @@
 {
-  "accepted_staging_entries": {
-    "entry_count": 42,
-    "path": "provenance/accepted-staging-entries.sha256",
-    "sha256": "0235a69a8b5444fe46e2bd942aad8cd21902fc7fdac20ee0cb1fbdc70c107e6e"
+  "schema_version": 1,
+  "status": "owner-accepted-release-candidate",
+  "published": false,
+  "version": "0.1.0-alpha.2",
+  "release_date": "2026-09-02",
+  "repository": "https://github.com/jan-guenter/bluemap-lootr-addon",
+  "tag": "v0.1.0-alpha.2",
+  "maven_coordinate": "io.github.jan-guenter:bluemap-lootr-addon:0.1.0-alpha.2",
+  "bluemap": {
+    "version": "5.22-feature.backport-5.23-stateless-java-web-server-46",
+    "commit": "7e07f4e74ec1e92a6ead9aa1e66054af3e133aac",
+    "api_commit": "285c9a60eff3ac2b0cab308ce1058d1565be0971"
   },
-  "final_release_artifacts": {
-    "gradle_module": {
-      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.module.json",
-      "sha256": "416cceed4718ebeb35033a771144c9ed9b4a0a0648d76db536b9bb8baef82b7e",
-      "size": 2805
-    },
-    "pom": {
-      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.pom",
-      "sha256": "f158a4f7c4a7f7f7ff18a02cb8887df1baf1191c25c9094d8c7b11150a5ddd81",
-      "size": 1305
-    },
+  "adapter_api": {
+    "version": "0.1.0-alpha.2",
+    "commit": "e81f08bc4bfbf02d810ec8949a019130e2e61634",
+    "source_tree": "2f974c9bb2ba13888d69682f86f30f58922d30eb",
+    "source_files_compiled": 4,
+    "module_jar_installed": false,
+    "module_jar_bundled": false,
+    "module_jar_nested": false,
+    "local_adapter_package": "io.github.janguenter.bluemap.lootr.adapter.bluemap523"
+  },
+  "baseline_release": {
+    "version": "0.1.0-alpha.1",
+    "tag": "v0.1.0-alpha.1",
+    "commit": "f01d71c1f55a743d73d171677b18ed13be5756eb",
+    "production_jar_size": 138464,
+    "production_jar_sha256": "009495162e9319990f7dfc427c4b5a9caa9279fbcd64740e51ccacaa37b06cc3",
+    "owner_visual_acceptance": "2026-08-28"
+  },
+  "candidate_artifacts": {
     "production_jar": {
-      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.jar",
-      "sha256": "009495162e9319990f7dfc427c4b5a9caa9279fbcd64740e51ccacaa37b06cc3",
-      "size": 138464
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.jar",
+      "size": 143928,
+      "sha256": "3d5acf3bfc54de610790765c28361b5a1bd04ee5a93a74578d81fda9b86e1aa7"
     },
     "sources_jar": {
-      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1-sources.jar",
-      "sha256": "1b4ee55eaa619efe227080da7e5ae8190a8ec6647be4d398af4e70ce6abfe6f3",
-      "size": 87674
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.2-sources.jar",
+      "size": 93049,
+      "sha256": "9972f164018f5d84ca606208861570736f23d63d14e7afe587b71a827f62a2c4"
+    },
+    "pom": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.pom",
+      "size": 1305,
+      "sha256": "ffc2442c6e9eddc947c4773833b2c380b0d53872d7b78191b05d062b30a57114"
+    },
+    "gradle_module": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.module.json",
+      "size": 2805,
+      "sha256": "8a9153bc209b9a973e077fd050332c24c6c9c2ccf3e8bfd1bd59b35eef1a99f4"
     }
   },
-  "note": "Owner-accepted staging identities and final publication artifacts are sealed here. This file is not packaged.",
-  "owner_accepted_staging": {
-    "accepted_on": "2026-08-28",
-    "addon_jar": {
-      "file_name": "bluemap-lootr-addon-0.1.0-SNAPSHOT.jar",
-      "sha256": "dd6de743e4605947b8341a17bbdd0f398bed54268a321a87b1e32b389b373262",
-      "size": 138465
-    },
-    "candidate_inputs": {
-      "lootr": {
-        "file_name": "lootr-neoforge-1.21.1-1.11.37.122.jar",
-        "sha256": "fd330d69bb0740d2833ad91784ee5f8b0e4c5d8dbee379e60e93ca2d1c252fce",
-        "size": 992330
-      }
-    },
-    "gallery": {
-      "file_name": "lootr-gallery.zip",
-      "sha256": "cc05029c506345bfeabe651faa5d9c0d0f13828430fd33ed8a6ce75d0154200b",
-      "size": 2627
-    },
-    "visual_acceptance": true
+  "gallery_candidate": {
+    "file_name": "lootr-gallery.zip",
+    "size": 2627,
+    "sha256": "cc05029c506345bfeabe651faa5d9c0d0f13828430fd33ed8a6ce75d0154200b",
+    "deterministic_rebuild": true,
+    "matches_alpha_1_owner_accepted_gallery": true
   },
-  "repository": "https://github.com/jan-guenter/bluemap-lootr-addon",
-  "schema_version": 1,
-  "prototype_scope": [
-    "gold and silver closed single-chest, trapped-chest, and inventory geometry",
-    "directional barrel, shulker, suspicious sand, and suspicious gravel appearance",
-    "intact and five-cuboid static opened decorated-pot geometry",
-    "stock trophy control and deterministic persisted LootrHasBeenOpened approximation"
-  ],
-  "status": "owner-accepted-release-candidate",
-  "version": "0.1.0-alpha.1"
+  "combined_integration_acceptance": {
+    "atmons_version": "1.2.0",
+    "accepted_on": "2026-09-02",
+    "owner_visual_acceptance": true,
+    "candidate_manifest": {
+      "generated_at": "2026-09-01T23:58:18.759515Z",
+      "sha256": "315ed84b8edd88132854382da76498cd84b23cef3b30093bf7f69825b09a72a4",
+      "integration_summary": "51/51"
+    },
+    "source_candidate_artifact": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.2.jar",
+      "size": 143928,
+      "sha256": "3d5acf3bfc54de610790765c28361b5a1bd04ee5a93a74578d81fda9b86e1aa7",
+      "source_commit": "f4e1ddb1c4f4de6118ad362446d12a10d5e5bfba"
+    },
+    "staged_overlay_artifact": {
+      "file_name": "bluemap-lootr-addon-0.1.0-alpha.1.jar",
+      "size": 144288,
+      "sha256": "1a30d65f4d4cf20c5647932a9c816b8e9e934c4a74defd6388d3b52bf87e8a50"
+    }
+  },
+  "preserved_contract": {
+    "routed_hosts": 8,
+    "gallery_cases": 14,
+    "gallery_sources_changed": false,
+    "exact_mod_profile_changed": false,
+    "renderer_behavior_changed": false,
+    "stock_fallback_changed": false
+  },
+  "ephemeral_ci_inputs": {
+    "lootr": {
+      "file_name": "lootr-neoforge-1.21.1-1.11.37.122.jar",
+      "size": 992330,
+      "sha256": "fd330d69bb0740d2833ad91784ee5f8b0e4c5d8dbee379e60e93ca2d1c252fce"
+    }
+  },
+  "verification": {
+    "exact_input_gate": true,
+    "adapter_api_gitlink_and_source_tree_gate": true,
+    "production_archive_boundary_gate": true,
+    "sources_archive_boundary_gate": true,
+    "local_candidate_artifact_identity_gate": true,
+    "authoritative_pr_ci_reproduction": false,
+    "local_gradle_version": "9.6.1",
+    "local_java_runtime": "21.0.12.1+1",
+    "exact_alpha_2_runtime_review": true
+  }
 }
